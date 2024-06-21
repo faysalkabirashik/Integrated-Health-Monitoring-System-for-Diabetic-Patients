@@ -58,30 +58,36 @@
     <div class="main-content">
         <h1>Prescribed Medicines</h1>
 
-        <!-- Form to Add Prescribed Medicine -->
-        <form class="mb-4">
-            <div class="mb-3">
-                <label for="patientName" class="form-label">Patient Name</label>
-                <input type="text" class="form-control" id="patientName" placeholder="Enter patient's name">
-            </div>
-            <div class="mb-3">
-                <label for="medicineName" class="form-label">Medicine Name</label>
-                <input type="text" class="form-control" id="medicineName" placeholder="Enter medicine name">
-            </div>
-            <div class="mb-3">
-                <label for="dosage" class="form-label">Dosage</label>
-                <input type="text" class="form-control" id="dosage" placeholder="Enter dosage">
-            </div>
-            <div class="mb-3">
-                <label for="prescriptionDate" class="form-label">Prescription Date</label>
-                <input type="date" class="form-control" id="prescriptionDate">
-            </div>
-            <div class="mb-3">
-                <label for="prescribingPhysician" class="form-label">Prescribing Physician</label>
-                <input type="text" class="form-control" id="prescribingPhysician" placeholder="Enter physician's name">
-            </div>
-            <button type="submit" class="btn btn-primary">Add Prescription</button>
-        </form>
+        <!-- Table to Display Prescriptions -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Patient Name</th>
+                    <th scope="col">Medicine Name</th>
+                    <th scope="col">Dosage</th>
+                    <th scope="col">Prescription Date</th>
+                    <th scope="col">Prescribing Physician</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example Row -->
+                <tr>
+                    <th scope="row">1</th>
+                    <td>John Doe</td>
+                    <td>Metformin</td>
+                    <td>500mg</td>
+                    <td>2024-06-13</td>
+                    <td>Dr. Smith</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm">Edit</button>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+                <!-- Additional rows can be added here -->
+            </tbody>
+        </table>
     </div>
 
 </body>
