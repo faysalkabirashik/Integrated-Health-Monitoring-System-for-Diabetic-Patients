@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Demographic Data Entry</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgb(11, 232, 140);
+        }
+        .container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Demographic Data Entry</h1>
+        <form id="patientForm">
+            <!-- Form fields here -->
+            <!-- First Name -->
+            <div class="row mb-3">
+                <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                </div>
+            </div>
+            <!-- Last Name -->
+            <div class="row mb-3">
+                <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="lastName" name="lastName" required>
+                </div>
+            </div>
+            <!-- Date of Birth -->
+            <div class="row mb-3">
+                <label for="dateOfBirth" class="col-sm-2 col-form-label">Date of Birth</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" required>
+                </div>
+            </div>
+            <!-- Gender -->
+            <div class="row mb-3">
+                <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" required>
+                        <label class="form-check-label" for="genderMale">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" required>
+                        <label class="form-check-label" for="genderFemale">Female</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="genderOther" value="other">
+                        <label class="form-check-label" for="genderOther">Other</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Address -->
+            <div class="row mb-3">
+                <label for="address" class="col-sm-2 col-form-label">Address</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+                </div>
+            </div>
+            <!-- Phone Number -->
+            <div class="row mb-3">
+                <label for="phoneNumber" class="col-sm-2 col-form-label">Phone Number</label>
+                <div class="col-sm-10">
+                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX">
+                </div>
+            </div>
+            <!-- Email -->
+            <div class="row mb-3">
+                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </div>
+            <!-- Weight -->
+            <div class="row mb-3">
+                <label for="weight" class="col-sm-2 col-form-label">Weight (kg)</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="weight" name="weight" required>
+                </div>
+            </div>
+            <!-- Height -->
+            <div class="row mb-3">
+                <label for="height" class="col-sm-2 col-form-label">Height (cm)</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="height" name="height" required>
+                </div>
+            </div>
+            <!-- BMI -->
+            <div class="row mb-3">
+                <label for="bmi" class="col-sm-2 col-form-label">BMI</label>
+                <div class="col-sm-10">
+                    <input type="number" step="0.1" class="form-control" id="bmi" name="bmi" required>
+                </div>
+            </div>
+            <!-- Dietary Restrictions -->
+            <div class="row mb-3">
+                <label for="dietaryRestrictions" class="col-sm-2 col-form-label">Dietary Restrictions</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="dietaryRestrictions" name="dietaryRestrictions">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <!-- View Table Button -->
+        <a href="demographicdataview.html" class="btn btn-secondary">View Demographic Data</a>
+    </div>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('patientForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Get form data
+            const formData = new FormData(event.target);
+            const patientData = {};
+            formData.forEach((value, key) => {
+                patientData[key] = value;
+            });
+
+            // Save data to localStorage
+            let patients = JSON.parse(localStorage.getItem('patients')) || [];
+            patients.push(patientData);
+            localStorage.setItem('patients', JSON.stringify(patients));
+
+            // Clear form
+            event.target.reset();
+        });
+    </script>
+</body>
+</html>
