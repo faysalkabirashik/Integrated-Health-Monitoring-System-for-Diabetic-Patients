@@ -1,0 +1,40 @@
+.custom-footer {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+.footer-left {
+    float: left;
+}
+.footer-right {
+    float: right;
+}
+
+
+
+.s-i-size{
+    height: 30px; 
+    width: 30px;
+} 
+
+.sidebar {
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding: 15px;
+    position: fixed;
+}
+.sidebar .nav-link {
+    color: #000;
+}
+.sidebar .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+}
+.main-content {
+    margin-left: 220px; /* Adjust this width according to sidebar width */
+    padding: 20px;
+}
+
+.logo-Size{
+    height: 70px;
+    width: 70px;
+}
