@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+           <!-- Side Navbar -->
+           <div class="sidebar">
+            <h2>Dashboard</h2>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="#" id="p_demo_data">Patient Demographics</a>
+                    <select class="form-control" id="p_demo_data">
+                        <option>Enter demographic data</option>
+                        <option>View profile</option>
+                        
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="#">Diagnosis Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="physiciansInformations.html">Physicians</a>
+                    
+                    
+                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="facilities.html">Facilities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="recommendation.html">Diet Recommendations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="prescribedMedicines.html">Prescribed Medicine</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="recommendation.html">Recommendations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="#">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-danger" href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+    
+
+     <!-- Main Content -->
+    <div class="main-content">
+        <h1>Prescribed Medicines</h1>
+
+        <!-- Table to Display Prescriptions -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Patient Name</th>
+                    <th scope="col">Medicine Name</th>
+                    <th scope="col">Dosage</th>
+                    <th scope="col">Prescription Date</th>
+                    <th scope="col">Prescribing Physician</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example Row -->
+                <tr>
+                    <th scope="row">1</th>
+                    <td>John Doe</td>
+                    <td>Metformin</td>
+                    <td>500mg</td>
+                    <td>2024-06-13</td>
+                    <td>Dr. Smith</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm">Edit</button>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+                <!-- Additional rows can be added here -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
