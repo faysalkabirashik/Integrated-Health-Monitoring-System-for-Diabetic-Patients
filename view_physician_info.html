@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/styles_faysal.css">
+    <link rel="stylesheet" href="CSS/styles_minhaz.css">
+</head>
+<body>
+    <header>
+        <!-- Section 1 -->
+        <div class="header-section-1">
+            <div class="social-links">
+                <a href="#"><img src="images/icons/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/icons/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/icons/instagram.png" alt="Instagram"></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="button">Search</button>
+            </div>
+            <div class="contact-us">
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+        </div>
+        <!-- Line Separator -->
+        <hr class="line-separator">
+        <!-- Section 2 -->
+        <div class="header-section-2">
+            <div class="logo">
+                <img src="images/logo.png" alt="Smart Care Diabetes Logo">
+            </div>
+            <h1><a href="index.html">Smart Care Diabetes</a></h1>
+        </div>
+        <!-- Line Separator -->
+        <hr class="line-separator">
+        <!-- Section 3: Navigation Bar -->
+        <nav class="header-section-3">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Find Facilities & Information</a>
+                    <ul class="dropdown-content">
+                        <li><a href="find_doctor.html">Find Doctors</a></li>
+                        <li><a href="find_hospital.html">Find Hospitals</a></li>
+                        <li><a href="find_dietician.html">Find Dieticians</a></li>
+                        <li><a href="find_diagnosis_center.html">Find Diagnosis Centers</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Demographic Management</a>
+                    <ul class="dropdown-content">
+                        <li><a href="inputPatientDemographicData.html">Manage Profile</a></li>
+                        <li><a href="viewDemographicData.html">View Profile</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Recommendation</a>
+                    <ul class="dropdown-content">
+                        <li><a href="submit_vitals.html">Submit Vitals & Preferences</a></li>
+                        <li><a href="view_recommendations.html">View Recommendations</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">History Tracking</a>
+                    <ul class="dropdown-content">
+                        <li><a href="prescribedMedicines.html">View Medicine Prescribed</a></li>
+                        <li><a href="viewMedicine.html">Update Prescription</a></li>
+                    </ul>
+                </li>
+                <li><a href="login_register.html">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+     <!-- Table to Display Physicians -->
+     <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Specialty</th>
+                <th scope="col">Contact Information</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example Row -->
+            <tr>
+                <th scope="row">1</th>
+                <td>Dr. John Doe</td>
+                <td>Cardiologist</td>
+                <td>123-456-7890</td>
+                <td>
+                    <button class="btn btn-warning btn-sm">Edit</button>
+                    <button class="btn btn-danger btn-sm">Delete</button>
+                </td>
+            </tr>
+            <!-- Additional rows can be added here -->
+        </tbody>
+    </table>
+    </main>
+    <footer>
+        <p>Contact us: info@smartcarediabetes.com | Follow us on social media: Facebook, Twitter, Instagram</p>
+        <p><a href="privacy_policy.html">Privacy Policy</a> | <a href="terms_of_service.html">Terms of Service</a></p>
+    </footer>
+</body>
+
+</html>
