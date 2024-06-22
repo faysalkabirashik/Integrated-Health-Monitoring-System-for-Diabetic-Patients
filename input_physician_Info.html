@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+           <!-- Side Navbar -->
+           <div class="sidebar">
+            <h2>Dashboard</h2>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="#" id="p_demo_data">Patient Demographics</a>
+                    <select class="form-control" id="p_demo_data">
+                        <option>Enter demographic data</option>
+                        <option>View profile</option>
+                        
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="#">Diagnosis Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="physiciansInformations.html">Physicians</a>
+                    
+                    
+                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="facilities.html">Facilities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="recommendation.html">Diet Recommendations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="prescribedMedicines.html">Prescribed Medicine</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="recommendation.html">Recommendations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="#">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-danger" href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+    
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Physicians' Information</h1>
+
+        <!-- Form to Add Physician -->
+        <form class="mb-4">
+            <div class="mb-3">
+                <label for="physicianName" class="form-label">Physician Name</label>
+                <input type="text" class="form-control" id="physicianName" placeholder="Enter physician name">
+            </div>
+            <div class="mb-3">
+                <label for="physicianSpecialty" class="form-label">Specialty</label>
+                <input type="text" class="form-control" id="physicianSpecialty" placeholder="Enter specialty">
+            </div>
+            <div class="mb-3">
+                <label for="physicianContact" class="form-label">Contact Information</label>
+                <input type="text" class="form-control" id="physicianContact" placeholder="Enter contact information">
+            </div>
+            <button type="submit" class="btn btn-primary">Add Physician</button>
+        </form>
+
+       
+    </div>
+
+    
+</body>
+</html>
