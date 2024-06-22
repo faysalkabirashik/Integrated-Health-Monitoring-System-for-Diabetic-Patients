@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Smart Care Diabetes</title>
+    <link rel="stylesheet" href="css/styles_faysal.css">
+</head>
+<body>
+    <header>
+        <!-- Section 1 -->
+        <div class="header-section-1">
+            <div class="social-links">
+                <a href="#"><img src="images/icons/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/icons/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/icons/instagram.png" alt="Instagram"></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="button">Search</button>
+            </div>
+            <div class="contact-us">
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+        </div>
+        <!-- Line Separator -->
+        <hr class="line-separator">
+        <!-- Section 2 -->
+        <div class="header-section-2">
+            <div class="logo">
+                <img src="images/logo.png" alt="Smart Care Diabetes Logo">
+            </div>
+            <h1><a href="index.html">Smart Care Diabetes</a></h1>
+        </div>
+        <!-- Line Separator -->
+        <hr class="line-separator">
+        <!-- Section 3: Navigation Bar -->
+        <nav class="header-section-3">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Find Facilities & Information</a>
+                    <ul class="dropdown-content">
+                        <li><a href="find_doctor.html">Find Doctors</a></li>
+                        <li><a href="find_hospital.html">Find Hospitals</a></li>
+                        <li><a href="find_dietician.html">Find Dieticians</a></li>
+                        <li><a href="find_diagnosis_center.html">Find Diagnosis Centers</a></li>
+                        <li><a href="input_physician_Info.html">Add Physician(Doctor) info</a></li>
+                        <li><a href="add_facilities.html">Add Facilities (Privileged)</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Demographic Management</a>
+                    <ul class="dropdown-content">
+                        <li><a href="inputPatientDemographicData.html">Manage Profile</a></li>
+                        <li><a href="viewDemographicData.html">View Profile</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Recommendation</a>
+                    <ul class="dropdown-content">
+                        <li><a href="submit_vitals.html">Submit Vitals & Preferences</a></li>
+                        <li><a href="view_recommendations.html">View Recommendations</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">History Tracking</a>
+                    <ul class="dropdown-content">
+                        <li><a href="prescribedMedicines.html">View Medicine Prescribed</a></li>
+                        <li><a href="viewMedicine.html">Update Prescription</a></li>
+                    </ul>
+                </li>
+                <li><a href="login_register.html">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="main-content">
+        <h1>Patient Diagnosis Data</h1>
+
+        <!-- Form to Add Diagnosis 
+        <form class="mb-4">
+            <div class="mb-3">
+                <label for="patientName" class="form-label">Patient Name</label>
+                <input type="text" class="form-control" id="patientName" placeholder="Enter patient's name">
+            </div>
+            <div class="mb-3">
+                <label for="diagnosis" class="form-label">Diagnosis</label>
+                <input type="text" class="form-control" id="diagnosis" placeholder="Enter diagnosis">
+            </div>
+            <div class="mb-3">
+                <label for="diagnosisDate" class="form-label">Diagnosis Date</label>
+                <input type="date" class="form-control" id="diagnosisDate">
+            </div>
+            <div class="mb-3">
+                <label for="treatment" class="form-label">Treatment</label>
+                <input type="text" class="form-control" id="treatment" placeholder="Enter treatment details">
+            </div>
+            <button type="submit" class="btn btn-primary">Add Diagnosis</button>
+        </form>
+    
+      
+    </div>
+        -->
+      
+            <form class="mb-4" enctype="multipart/form-data">  <div class="mb-3">
+                <label for="patientName" class="form-label">Patient Name</label>
+                <input type="text" class="form-control" id="patientName" placeholder="Enter patient's name">
+              </div>
+              <div class="mb-3">
+                <label for="diagnosis" class="form-label">Diagnosis</label>
+                <input type="text" class="form-control" id="diagnosis" placeholder="Enter diagnosis">
+              </div>
+              <div class="mb-3">
+                <label for="diagnosisDate" class="form-label">Diagnosis Date</label>
+                <input type="date" class="form-control" id="diagnosisDate">
+              </div>
+              <div class="mb-3">
+                <label for="treatment" class="form-label">Treatment</label>
+                <input type="text" class="form-control" id="treatment" placeholder="Enter treatment details">
+              </div>
+              <div class="mb-3">
+                <label for="reportFile" class="form-label">Upload Report (Optional)</label>
+                <input type="file" class="form-control" id="reportFile" accept=".pdf,.docx,.jpg,.jpeg">  </div>
+              <button type="submit" class="btn btn-primary">Add Diagnosis</button>
+            </form>
+      
+            </div>
+    </main>
+    <footer>
+        <p>Contact us: info@smartcarediabetes.com | Follow us on social media: Facebook, Twitter, Instagram</p>
+        <p><a href="privacy_policy.html">Privacy Policy</a> | <a href="terms_of_service.html">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>
